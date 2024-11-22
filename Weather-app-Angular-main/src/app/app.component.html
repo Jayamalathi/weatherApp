@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card">
+    <form (ngSubmit)="displayWeather()" class="val">
+    <input type="text"  [(ngModel)]="city" (click)="setdisplay()" name="search" placeholder="Enter City" class="search" />
+    <button type="submit">Submit</button>
+    </form>
+
+  <div class="display" *ngIf="setDisplay">
+    <div class="city">
+      <h4 class="city-text">{{city}},{{weath.country}}</h4>
+    </div>
+    <div class="data">
+      <div class="temp">Temperature: {{weath.temp}} &#176;C</div>
+      <div class="temp1">Feels-Like:{{weath.feels}} &#176;C</div>
+      <div class="cloud">Weather: {{weath.weather}}</div>
+      <div class="desc">Description: {{weath.desc}}</div>
+    </div>
+    <div class="otherInfo">
+      <h5 class="wind">Humidity: {{weath.humidity}}</h5>
+      <h5 class="humidity">Wind-Speed: {{weath.speed}} m/s</h5>
+    </div>
+  </div>
+  </div>
+</div>

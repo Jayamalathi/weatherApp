@@ -1,0 +1,92 @@
+/* Container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f7fa; /* Light blue background for a fresh look */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card styling */
+  .card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Form styling */
+  form.val {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #04BAE7; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #028bb5; /* Darker shade for hover effect */
+  }
+  
+  /* Display styling */
+  .display {
+    text-align: center;
+  }
+  
+  .city {
+    margin-bottom: 15px;
+  }
+  
+  .city-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .temp, .temp1, .cloud, .desc {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .otherInfo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .wind, .humidity {
+    font-size: 16px;
+    color: #777;
+  }
+  
